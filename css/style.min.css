@@ -2571,8 +2571,8 @@ th {
 
 @media print {
     *,
-    :after,
-    :before {
+     :after,
+     :before {
         color: #000!important;
         text-shadow: none!important;
         background: 0 0!important;
@@ -10253,25 +10253,30 @@ body {
 
 .templatemo-top-section {
     min-height: 75vh;
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/home/bg_3.jpg) no-repeat left top;
+    /* background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/home/bg_3.jpg) no-repeat left top; */
+    background: url(../img/home/bg_11.jpg) no-repeat left top;
     background-size: 100% 628px;
     margin-bottom: 30px
 }
 
 .templatemo-top-section_tires {
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/tires/bg_2.jpg) center top/cover no-repeat
+    /* background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/tires/bg_2.jpg) center top/cover no-repeat */
+    background: url(../img/home/bg_11.webp) no-repeat left top;
 }
 
 .templatemo-top-section_disck {
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/discks/disck_2.jpg) center center/cover no-repeat
+    /* background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/discks/disck_2.jpg) center center/cover no-repeat */
+    background: url(../img/home/bg_10.jpg) no-repeat left top;
 }
 
 .templatemo-top-section_services {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/services/s_bg.jpg) center top/cover no-repeat
+    /* background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/services/s_bg.jpg) center top/cover no-repeat */
+    background: url(../img/services/s_bg.jpg) center top/cover no-repeat
 }
 
 .templatemo-top-section_contact {
-    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/contacts/bg_44.jpg) right top/cover no-repeat
+    /* background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/contacts/bg_44.jpg) right top/cover no-repeat; */
+    background: url(../img/contacts/bg_44.jpg) right top/cover no-repeat;
 }
 
 .templatemo-header {

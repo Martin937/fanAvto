@@ -194,45 +194,133 @@
 
         <!--banner-->
         <div class="tm-banner">
-            <h2 class="tm-banner-title">Maecenas</h2>
-            <p class="tm-banner-description">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium</p>
-            <a href="#" class="tm-banner-link"><i class="fa fa-play"></i></a>
+            <h2 class="tm-banner-title"> <img src="icons/logo.jpg" alt="logo"> </h2>
+            <p class="tm-banner-description">Трудно выбрать ?<br> Закажите <span class="green"> бесплатную консультацию </span> и мы подберем для Вас <span class="blue"> оптимальный вариант</span></p>
+            <a href="#" class="tm-banner-link"><i class="fa fa-phone"></i></i></a>
         </div>
     </section>
     <!-- Main content -->
+    <form class="form form__tires" id="form__tires" method="#">
+        <h5>Сезонность</h5>
+        <div class="checkselect season">
+            <fieldset>
+                <legend>Сезонность</legend>
+                <label><input name="summer" value="summer" type="checkbox">Лето</label>
+                <label><input name="winter" value="winter" type="checkbox">Зима</label>
+                <label><input name="winter-thorns" value="winter-thorns" type="checkbox">Зима шипованные</label>
+                <label><input name="all-season" value="all-season" type="checkbox">Всесезонные</label>
+            </fieldset>
+        </div>
+        <h5>Бренд</h5>
+        <div class="checkselect">
+            <fieldset>
+                <legend>Бренд</legend>
+                <label><input name="brand[Continental]" value="Continental" type="checkbox">Continental</label>
+                <label><input name="brand[Michelin]" value="Michelin" type="checkbox">Michelin</label>
+                <label><input name="brand[Goodyear]" value="Goodyear" type="checkbox">Goodyear</label>
+                <label><input name="brand[Cooper]" value="Cooper" type="checkbox">Cooper</label>
+                <label><input name="brand[Pirelli]" value="Pirelli" type="checkbox">Pirelli</label>
+                <label><input name="brand[Bridgestone]" value="Bridgestone" type="checkbox">Bridgestone</label>
+                <label><input name="brand[Yokohama]" value="Yokohama" type="checkbox">Yokohama</label>
+            </fieldset>
+        </div>
+        <h5>Ширина</h5>
+        <div class="checkselect">
+            <fieldset>
+                <legend>Ширина</legend>
+                <label><input name="width[80]" value="80" type="checkbox">80</label>
+                <label><input name="width[90]" value="90" type="checkbox">90</label>
+                <label><input name="width[100]" value="100" type="checkbox">100</label>
+                <label><input name="width[110]" value="110" type="checkbox">110</label>
+                <label><input name="width[120]" value="120" type="checkbox">120</label>
+                <label><input name="width[130]" value="130" type="checkbox">130</label>
+                <label><input name="width[140]" value="140" type="checkbox">140</label>
+                <label><input name="width[150]" value="150" type="checkbox">150</label>
+                <label><input name="width[160]" value="160" type="checkbox">160</label>
+                <label><input name="width[170]" value="170" type="checkbox">170</label>
+                <label><input name="width[180]" value="180" type="checkbox">180</label>
+                <label><input name="width[190]" value="190" type="checkbox">190</label>
+                <label><input name="width[200]" value="200" type="checkbox">200</label>
+            </fieldset>
+        </div>
+        <h5>Профиль</h5>
+        <div class="checkselect">
+            <fieldset>
+                <legend>Профиль</legend>
+                <label><input name="profile[80]" value="80" type="checkbox">80</label>
+                <label><input name="profile[90]" value="90" type="checkbox">90</label>
+                <label><input name="profile[100]" value="100" type="checkbox">100</label>
+                <label><input name="profile[110]" value="110" type="checkbox">110</label>
+                <label><input name="profile[120]" value="120" type="checkbox">120</label>
+                <label><input name="profile[130]" value="130" type="checkbox">130</label>
+                <label><input name="profile[140]" value="140" type="checkbox">140</label>
+                <label><input name="profile[150]" value="150" type="checkbox">150</label>
+                <label><input name="profile[160]" value="160" type="checkbox">160</label>
+                <label><input name="profile[170]" value="170" type="checkbox">170</label>
+                <label><input name="profile[180]" value="180" type="checkbox">180</label>
+                <label><input name="profile[190]" value="190" type="checkbox">190</label>
+                <label><input name="profile[200]" value="200" type="checkbox">200</label>
+            </fieldset>
+        </div>
+        <h5>Диаметр</h5>
+        <div class="checkselect">
+            <fieldset>
+                <legend>Диаметр</legend>
+                <label><input name="diameter[80]" value="80" type="checkbox">80</label>
+                <label><input name="diameter[90]" value="90" type="checkbox">90</label>
+                <label><input name="diameter[100]" value="100" type="checkbox">100</label>
+                <label><input name="diameter[110]" value="110" type="checkbox">110</label>
+                <label><input name="diameter[120]" value="120" type="checkbox">120</label>
+                <label><input name="diameter[130]" value="130" type="checkbox">130</label>
+                <label><input name="diameter[140]" value="140" type="checkbox">140</label>
+                <label><input name="diameter[150]" value="150" type="checkbox">150</label>
+                <label><input name="diameter[160]" value="160" type="checkbox">160</label>
+                <label><input name="diameter[170]" value="170" type="checkbox">170</label>
+                <label><input name="diameter[180]" value="180" type="checkbox">180</label>
+                <label><input name="diameter[190]" value="190" type="checkbox">190</label>
+                <label><input name="diameter[200]" value="200" type="checkbox">200</label>
+            </fieldset>
+        </div>
+        <input type="submit" value="подобрать">
+    </form>
+
     <!--Footer content-->
     <footer class="tm-footer">
         <div class="container">
             <div class="row margin-bottom-60">
                 <nav class="col-lg-3 col-md-3 tm-footer-nav tm-footer-div">
-                    <h3 class="tm-footer-div-title">Main Menu</h3>
+                    <h3 class="tm-footer-div-title">Карта сайта</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="gallery.html">Directory</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="index.html">главная</a></li>
+                        <li><a href="about.html">о нас</a></li>
+                        <li><a href="gallery.html">услуги</a></li>
+                        <li><a href="tires.html">каталог</a></li>
                     </ul>
                 </nav>
-                <div class="col-lg-5 col-md-5 tm-footer-div">
-                    <h3 class="tm-footer-div-title">About Us</h3>
-                    <p class="margin-top-15">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
-                    <p class="margin-top-15">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
+                <div class="col-lg-6 col-md-6 tm-footer-div">
+                    <h3 class="tm-footer-div-title">О нас</h3>
+                    <p class="margin-top-15">Адрес: <br> г. Киев ул. Строителей 17</p>
+                    <p class="margin-top-15">Телефон: <br><a href="tel:+380509427330"><span class="green">+38-050-94-27-330</span></a></p>
+                    <p class="margin-top-15">Email: <br><a href="mailto:FanAvto@google.com"><span class="green">FanAvto</span></a></p>
                 </div>
-                <div class="col-lg-4 col-md-4 tm-footer-div">
-                    <h3 class="tm-footer-div-title">Get Social</h3>
-                    <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.</p>
+
+                <div class="col-lg-3 col-md-3 tm-footer-div">
+                    <h3 class="tm-footer-div-title">График работы</h3>
+                    <p class="margin-top-15">Понедельник - пятница</p>
+                    <p class="margin-top-15"><span class="green">9-00 - 18-00</span><br> Время Киевское</p>
+                </div>
+
+                <!-- <div class="col-lg-3 col-md-3 tm-footer-div">
+                    <h3 class="tm-footer-div-title">Социальный блок</h3>
                     <div class="tm-social-icons-container">
                         <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
-                        <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="tm-social-icon"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="tm-social-icon"><i class="fa fa-vk"></i></a>
                         <a href="#" class="tm-social-icon"><i class="fa fa-youtube"></i></a>
-                        <a href="#" class="tm-social-icon"><i class="fa fa-behance"></i></a>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="row tm-copyright">
-                <p class="col-lg-12 small copyright-text text-center">Copyright &copy; 2084 Company Name</p>
+                <p class="col-lg-12 small copyright-text text-center">Copyright &copy; 2020 FanAvto.ua</p>
             </div>
         </div>
     </footer>
@@ -241,6 +329,8 @@
     <!-- JS -->
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <!-- jQuery -->
+    <script type="text/javascript" src="js/forms.js"></script>
+
     <script type="text/javascript" src="js/templatemo-script.js"></script>
     <!-- Templatemo Script -->
 

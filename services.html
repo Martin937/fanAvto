@@ -29,7 +29,7 @@
     </div>
     <!-- End Preloader -->
 
-    <section class="templatemo-top-section templatemo-top-section_services">
+    <section id="up" class="templatemo-top-section templatemo-top-section_services">
         <div class="templatemo-header">
             <img class="templatemo-header-img" src="img/header.png" alt="Header">
             <h1 class="templatemo-site-name">ФанАвто</h1>
@@ -48,7 +48,7 @@
                 </nav>
             </div>
         </div>
-        <div class="templatemo-welcome welcome-slider">
+        <div class="templatemo-welcome welcome-slider margin-top-150">
             <div class="container">
                 <div class="row">
                     <div class="flexslider">
@@ -107,6 +107,7 @@
 
     <div class="container margin-bottom-50">
         <div class="row">
+            <h2>Мы работаем для Вас</h2>
             <div class="col-lg-12 tm-overflow-hidden">
                 <div class="tm-img-1-container">
                     <img src="img/services/s_1.png" alt="Image description">
@@ -138,7 +139,7 @@
                         <i class="fa fa-plus services-icon"></i>
                         <h3 class="services-title-2">Подбор шин</h3>
                     </div>
-                    <p class="services-description">Назовите нам модель и год выпуска Вашего автомобиля и наши специалисты <span class="green"> бесплатно </span>подберут для Вас все возможные варианты</p>
+                    <p class="services-description">Назовите нам модель и год выпуска Вашего автомобиля и наши специалисты <span class="blue"> бесплатно </span>подберут для Вас все возможные варианты</p>
                     <a href="#" class="about-link about-link-2">Подобрать</a>
                 </div>
                 <div class="services-block">
@@ -146,8 +147,8 @@
                         <i class="fa fa-plus services-icon"></i>
                         <h3 class="services-title-2">Подбор дисков</h3>
                     </div>
-                    <p class="services-description">Назовите нам модель и год выпуска Вашего автомобиля и наши специалисты <span class="green"> бесплатно </span>подберут для Вас все возможные варианты</p>
-                    <a href="#" class="about-link about-link-2">Подобрать</a>
+                    <p class="services-description">Назовите нам модель и год выпуска Вашего автомобиля и наши специалисты <span class="blue"> бесплатно </span>подберут для Вас все возможные варианты</p>
+                    <a href="index" class="about-link about-link-2">Подобрать</a>
                 </div>
             </div>
             <div class="services-blocks-container">
@@ -168,8 +169,8 @@
                         <i class="fa fa-plus services-icon"></i>
                         <h3 class="services-title-2">Шиномонтаж и СТО</h3>
                     </div>
-                    <p class="services-description">Наши партнеры СТО <span class="green"> "</span><span class="blue">Шинодива</span><span class="green">" </span> выполнят все виды работ качественно и в кратчайшие сроки. При покупке шин или дисков в нашем магазине - шиномонтаж на СТО
-                        "Шинодива" предоставляется без очереди. При предоставлении чека на два колеса <span class="blue"> скидка 20%</span>, при предоставлении чека на полный комплект <span class="green"> скидка 100%</span></p>
+                    <p class="services-description">Наши партнеры СТО <span class="blue"> "Шинодива" </span> выполнят все виды работ качественно и в кратчайшие сроки. При покупке шин или дисков в нашем магазине - шиномонтаж на СТО "Шинодива" предоставляется без очереди. При предоставлении
+                        чека на два колеса <span class="blue"> скидка 20%</span>, при предоставлении чека на полный комплект <span class="blue"> скидка 100%</span></p>
                 </div>
             </div>
         </div>
@@ -185,14 +186,14 @@
             </div>
             <div class="services-container-inner">
                 <h3 class="about-title-2">Насосы</h3>
-                <img src="img/services/594699247_w200_h200_kompressor-belavto-sputnik.webp" alt="Image" class="img-responsive margin-bottom-15">
+                <img src="img/services/d_3.webp" alt="Image" class="img-responsive margin-bottom-15">
                 <p class="services-description">lorem ipsum dolor sit amet, consectetur adipis</p>
                 <p class="services-description">Цена: 300гр.</p>
                 <a href="#" class="about-link about-link-2">Купить</a>
             </div>
             <div class="services-container-inner">
                 <h3 class="about-title-2">Накладки</h3>
-                <img src="img/services/d_2.png" alt="Image" class="img-responsive margin-bottom-15">
+                <img src="img/services/d_3.png" alt="Image" class="img-responsive margin-bottom-15">
                 <p class="services-description">lorem ipsum dolor sit amet, consectetur adipis</p>
                 <p class="services-description">Цена: 100гр.</p>
                 <a href="#" class="about-link about-link-2">Купить</a>
@@ -203,10 +204,46 @@
         <div class="tm-banner">
             <h2 class="tm-banner-title"> <img src="icons/logo.jpg" alt="logo"> </h2>
             <p class="tm-banner-description">Трудно выбрать ?<br> Закажите <span class="green"> бесплатную консультацию </span> и мы подберем для Вас <span class="blue"> оптимальный вариант</span></p>
-            <a href="#" class="tm-banner-link"><i class="fa fa-phone"></i></i></a>
+            <button data-modal="consultation" class="tm-banner-link"><i class="fa fa-phone"></i></button>
         </div>
     </section>
-    <!-- Main content -->
+    <!-- modal -->
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit ">заказать консультацию</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit">купить</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </div>
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
     <!--Footer content-->
     <footer class="tm-footer">
         <div class="container">
@@ -215,9 +252,8 @@
                     <h3 class="tm-footer-div-title">Карта сайта</h3>
                     <ul>
                         <li><a href="index.html">главная</a></li>
-                        <li><a href="about.html">о нас</a></li>
-                        <li><a href="gallery.html">услуги</a></li>
-                        <li><a href="tires.html">каталог</a></li>
+                        <li><a href="#">о нас</a></li>
+                        <li><a href="#">каталог</a></li>
                     </ul>
                 </nav>
                 <div class="col-lg-6 col-md-6 tm-footer-div">

@@ -9,15 +9,15 @@
 9.	git config --local core.quotepath off	Установка отображения unicode
 10.	git status	Посмотреть состояние
 11.	git add -A	Добавить все файлы
-12.	git commit -a -m”first-message”	Создание контрольной точки
+12.	git commit -a -m”message”	Создание контрольной точки
 13.	git add -A + git commit -a -m”message”	Вводить после внесения всех изменений
 14.	git log	Посмотреть изменения
 15.
 16.
 17.	Создаём репозиторий на GITHUB и связываем его с проектом
 18.
-19.	git remote add origin https://github.com/Martin937/github.io.git	Прописываем путь к github
-20.	git remote set-url origin https://github.com/Martin937/github.io.git	Если нужно изменить уже существующий
+19.	git remote add origin https://github.com/Martin937//beOnPulse.git	Прописываем путь к github
+20.	git remote set-url origin https://github.com/Martin937/beOnPulse.git	Если нужно изменить уже существующий
 21.	git push -u origin master	Заливка на github
 22.	git pull	Обновление всех связей и изменений
 23.	git push	Заливка на github
@@ -33,26 +33,37 @@
 33.	npm init	Создание пакета .JSON-файл в каталог проекта
 34.	npm install gulp --save-dev	Установите пакет gulp
 35.	gulp --version	Проверяем установку gulp
-36.	npm i gulp-sass --save-dev	Устанавливаем пакеты npm
-37.	npm i browser-sync --save-dev	Устанавливаем пакеты npm
-38.	npm i gulp-autoprefixer --save-dev	Устанавливаем пакеты npm
-39.	npm i gulp-clean-css --save-dev	Устанавливаем пакеты npm
-40.	npm i gulp-rename --save-dev	Устанавливаем пакеты npm
-41.	npm i gulp-htmlmin --save-dev	Устанавливаем пакеты npm
-42.	npm i gulp-imagemin --save-dev	Устанавливаем пакеты npm
-43.	добавить в packadge.json
+
+36. npm i gulp-autoprefixer --save-dev	-автоматически добавляет вендорные префиксы к CSS свойствам
+37. npm i gulp-clean-css --save-dev — нужен для сжатия CSS кода
+38. npm i browser-sync --save-dev	    -локальный dev сервер
+39. npm i gulp-imagemin --save-dev    	-для сжатия картинок
+41. npm i imagemin-pngquant --save-dev     -дополнения к предыдущему плагину, для работы с PNG 
+42.	npm i gulp-uglify --save-dev     -будет сжимать наш JS
+43. npm i gulp-sass --save-dev     -для компиляции нашего SCSS кода
+44. npm i gulp-sourcemaps --save-dev     -для генерации css sourscemaps, которые будут помогать нам при отладке кода
+45. npm i gulp-rigger --save-dev     -это просто киллер фича. Плагин позволяет импортировать один файл в другой простой конструкцией //= footer.html
+46. npm i gulp-watch --save-dev     -для наблюдения за изменениями файлов
+47. npm i rimraf --save-dev      -rm -rf для ноды
+48. npm i gulp-rename --save-dev	    Устанавливаем пакеты npm
+49. npm i gulp-htmlmin --save-dev	    Устанавливаем пакеты npm
+50.	добавить в packadge.json
 "browserslist": [
     "last 1 version",
     "> 1%",
     "maintained node versions",
     "not dead"
   ]
-44.	npm i	Если используем скопированные файлы
-45.	gulp	Запускаем gulp
-46. Ctrl+c	Остановить gulp
-47.
-48.	Для сброса кэша сервера нажать SHIFT+F5
-49. 
+51.	npm i	Если используем скопированные файлы
+52.	gulp	Запускаем gulp
+53. Ctrl+c	Остановить gulp
+54.	Для сброса кэша сервера нажать SHIFT+F5
+55.
+56.
+57.
+58.
+59.
+
 
 
 Популярные названия классов HTML/CSS

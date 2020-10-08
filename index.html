@@ -14,10 +14,10 @@
 <body>
 
     <!-- Preloader -->
-    <div id="loader-wrapper ">
-        <div id="loader "></div>
-        <div class="loader-section section-left "></div>
-        <div class="loader-section section-right "></div>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
     </div>
     <!-- End Preloader -->
 
@@ -32,11 +32,11 @@
             <div class="nav__container ">
                 <nav class="nav ">
                     <ul class="nav__list ">
-                        <li class="nav__item "><a href="index.html " class="nav__link nav__link_active ">Главная</a></li>
-                        <li class="nav__item "><a href="tires.html " class="nav__link ">Шины</a></li>
-                        <li class="nav__item "><a href="discks.html " class="nav__link ">Диски</a></li>
-                        <li class="nav__item "><a href="services.html " class="nav__link ">Услуги</a></li>
-                        <li class="nav__item "><a href="contact.html " class="nav__link ">Контакты</a></li>
+                        <li class="nav__item"><a href="index.html" class="nav__link nav__link_active">Главная</a></li>
+                        <li class="nav__item"><a href="tires.html" class="nav__link">Шины</a></li>
+                        <li class="nav__item"><a href="discks.html" class="nav__link">Диски</a></li>
+                        <li class="nav__item"><a href="services.html" class="nav__link">Услуги</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -93,12 +93,17 @@
             </div>
         </div>
     </section>
+    <div class="basket-and-search">
+        <form class="search"><input class="search__input" placeholder="Поиск" type="text">
+        </form>
+        <a href="# " class="basket"><img src="icons/k_4.png " alt="basket " class="basket__img "></a>
+    </div>
 
     <!--Main content-->
     <section class="filter-section ">
         <div class="container ">
 
-            <div class="section_grid ">
+            <div class="filter-section_grid ">
                 <div class="banner banner_top">
                     <div class="logo ">
                         <div class="logo__icon ">
@@ -108,18 +113,14 @@
                     </div>
                     <div class="banner__desc ">Трудно выбрать ?<br> Закажите <span class="green "> бесплатную консультацию </span> и мы подберем для Вас<span class="blue "> оптимальный вариант</span>
                     </div>
-                    <a class="banner__link ">
+                    <a class="banner__link" data-modal="consultation">
                         <div class="banner__phone ">
                             <img src="icons/tel_4.png" alt="phone ">
                         </div>
                     </a>
                 </div>
-                <form class="search-home"><input class="search" placeholder="Поиск" type="text">
-                </form>
 
-                <div class="basket ">
-                    <a href="# " class="basket__list "><img src="icons/k_4.png " alt="basket " class="basket__img "></a>
-                </div>
+                <div class="avto"><img src="icons/s_2.png" alt="avto" class="avto__img"></div>
 
                 <div class="filters "></div>
 
@@ -154,45 +155,6 @@
         </div>
     </section>
     <!-- Main content -->
-
-    <!-- modal -->
-    <div class="overlay ">
-        <div class="modal " id="consultation ">
-            <div class="modal__close ">&times;</div>
-            <div class="modal__subtitle ">Просто заполните форму заявки</div>
-            <div class="modal__descr ">и мы перезвоним вам в течении 10 минут</div>
-            <form class="feed-form feed-form_mt25 " action="# ">
-                <input name="name " placeholder="Ваше имя " type="text ">
-                <input name="phone " placeholder="Ваш телефон ">
-                <input name="email " placeholder="Ваш E-mail " type="email ">
-
-                <button class="button button_submit ">заказать консультацию</button>
-            </form>
-        </div>
-
-        <!-- <div class="modal " id="order ">
-            <div class="modal__close ">&times;</div>
-            <div class="modal__subtitle ">Ваш заказ:</div>
-            <div class="modal__descr ">Пульсометр Polar FT1</div>
-            <form class="feed-form feed-form_mt25 " action="# ">
-                <input name="name " required placeholder="Ваше имя " type="text ">
-                <input name="phone " required placeholder="Ваш телефон ">
-                <input name="email " required placeholder="Ваш E-mail " type="email ">
-
-                <button class="button button_submit ">купить</button>
-            </form>
-        </div> -->
-
-        <div class="modal modal_mini " id="thanks ">
-            <div class="modal__close ">&times;</div>
-            <div class="modal__subtitle ">Спасибо за вашу заявку!</div>
-            <div class="modal__descr ">Наш менеджер свяжется с вами в ближайшее время!</div>
-        </div>
-    </div>
-    <!-- pageup -->
-    <a href="#up" class="pageup">
-        <img src="icons/up.svg" alt="up">
-    </a>
     <!--Footer content-->
     <footer class="footer ">
         <div class="container ">
@@ -225,6 +187,43 @@
         </div>
     </footer>
     <!-- Footer content-->
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit">заказать консультацию</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Пульсометр Polar FT1</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+
+                <button class="button button_submit">купить</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </div>
+    <!-- pageup -->
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
 
     <!-- JS -->
     <!-- jQuery -->
@@ -233,7 +232,7 @@
     <!-- FlexSlider -->
     <script defer src="js/jquery.flexslider-min.js "></script>
     <!-- Forms -->
-    <script defer src="js/forms.js "></script>
+    <!-- <script defer src="js/forms.js "></script> -->
     <script defer src="js/script.js "></script>
 
 </body>

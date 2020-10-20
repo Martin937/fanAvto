@@ -55,6 +55,7 @@ $(document).ready(function() {
                 e.preventDefault();
                 $('.services-promo__content').eq(i).toggleClass('services-promo__content_active');
                 $('.services-promo__details').eq(i).toggleClass('services-promo__details_active');
+                // $('.services-promo__inner').eq(i).toggleClass('services-promo__inner_active');
             })
         });
     };

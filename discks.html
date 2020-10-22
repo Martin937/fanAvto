@@ -60,10 +60,8 @@
         </div>
     </section>
 
-    <form class="search"><input class="search__input" placeholder="Поиск" type="text">
-    </form>
+    <form class="search"><input class="search__input" placeholder="Поиск" type="text"></form>
     <a href="# " class="basket"><img src="icons/k_4.png " alt="basket " class="basket__img "></a>
-
 
     <!--Main content-->
     <section class="discks">
@@ -222,16 +220,16 @@
                         </select>
                     </div>
 
+                    <div class="select cost">
+                        <!-- <label></label> -->Цена
+                        <input type="range" min="500" max="10000" step="100" value="500">
+                    </div>
+
                     <div class="select cost-num">
                         От
                         <div class="square"></div>
                         До
                         <div class="square"></div>
-                    </div>
-
-                    <div class="select cost">
-                        <label>Цена</label>
-                        <input type="range" min="500" max="10000" step="100" value="500">
                     </div>
 
                     <button class="select button-reset">Сброс</button>
@@ -242,15 +240,16 @@
                 <!--Блок с селектами для поиска по параметрам-->
                 <form class="on onparameter">
 
+                    <div class="select cost">
+                        <!-- <label></label> -->
+                        <p>Цена</p>
+                        <input type="range" min="500" max="10000" step="100" value="500">
+                    </div>
+
                     <div class="select cost-num">
                         От
                         <div class="square"></div> До
                         <div class="square"></div>
-                    </div>
-
-                    <div class="select cost">
-                        <label>Цена</label>
-                        <input type="range" min="500" max="10000" step="100" value="500">
                     </div>
 
                     <div class="width">
@@ -1689,7 +1688,6 @@
         </div>
 
     </section>
-    <!-- Main content -->
     <!--Footer content-->
     <footer class="footer ">
         <div class="container ">
@@ -1721,7 +1719,7 @@
         </div>
         </div>
     </footer>
-    <!-- Footer content-->
+    <!-- overlay-->
     <div class="overlay">
         <div class="modal" id="consultation">
             <div class="modal__close">&times;</div>

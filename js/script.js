@@ -82,7 +82,7 @@ $(document).ready(function() {
 
 
 });
-
+'use strict';
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.nav__list'),
         menuItem = document.querySelectorAll('.nav__item'),
